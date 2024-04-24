@@ -1,0 +1,3 @@
+com.simplecity.amp_library.ui.modelviews.HorizontalRecyclerView#<init>(Ljava/lang/String;)V
+com.simplecityapps.recycler_adapter.adapter.ViewModelAdapter#instance-init#
+com.simplecityapps.recycler_adapter.adapter.ViewModelAdapter#<init>()V

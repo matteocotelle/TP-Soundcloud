@@ -64,7 +64,7 @@ public class EmptyView extends BaseViewModel<EmptyView.ViewHolder> {
         return new ViewHolder(createView(parent));
     }
 
-    public static class ViewHolder extends BaseViewHolder {
+    public static class ViewHolder extends BaseViewHolder<EmptyView> {
 
         public ViewHolder(View itemView) {
             super(itemView);

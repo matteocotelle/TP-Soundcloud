@@ -1,0 +1,42 @@
+
+Œcom.simplecity.amp_library.ui.settings.SettingsParentFragment#newInstance(II)Lcom/simplecity/amp_library/ui/settings/SettingsParentFragment;x
+n/Users/matteo/dev/Shuttle/app/src/main/java/com/simplecity/amp_library/ui/settings/SettingsParentFragment.javaC) C(4"1*´
+1D D("_
+]
+E E(+
+%0java.lang.String"__id*3
+
+__unknown_file (
+preference_resourceQ
+O
+F F(
+%1java.lang.String"__id*%
+
+__unknown_file (	
+title‘Ž
+G. G(DC
+%2=com.simplecity.amp_library.ui.settings.SettingsParentFragment"=com.simplecity.amp_library.ui.settings.SettingsParentFragment¿
+¼
+G* G(F
+%3"Gcom.simplecity.amp_library.ui.settings.SettingsParentFragment#<init>()V*a
+
+__unknown_file (E
+C
+%2=com.simplecity.amp_library.ui.settings.SettingsParentFragmentÁ
+¾
+G G(GI
+fragment=com.simplecity.amp_library.ui.settings.SettingsParentFragment"__id*a
+
+__unknown_file (E
+C
+%2=com.simplecity.amp_library.ui.settings.SettingsParentFragment"W
+I I(K
+I
+fragment=com.simplecity.amp_library.ui.settings.SettingsParentFragment: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""BA"?
+=com.simplecity.amp_library.ui.settings.SettingsParentFragmentH

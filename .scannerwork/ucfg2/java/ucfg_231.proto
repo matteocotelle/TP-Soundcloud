@@ -1,0 +1,62 @@
+
+5com.simplecity.amp_library.model.Playlist#hashCode()Id
+Z/Users/matteo/dev/Shuttle/app/src/main/java/com/simplecity/amp_library/model/Playlist.javaq q("4*Z
+2sA s(BF
+D
+sA s(B	
+%2int"__id*'
+
+__unknown_file (
+	
+%4int*
+1*Ô
+3s/ s(3
+}
+s/ s(3
+%5java.lang.String"__id*S
+
+__unknown_file (7*5+
+)com.simplecity.amp_library.model.Playlist"
+namewu
+s/ s(>	
+%3int"java.lang.String#hashCode()I*4
+
+__unknown_file (
+
+%5java.lang.String2
+hashCode()F
+D
+s/ s(>	
+%2int"__id*'
+
+__unknown_file (
+	
+%3int*
+1*¾
+4r r(
+}
+s  s($
+%0java.lang.String"__id*S
+
+__unknown_file (7*5+
+)com.simplecity.amp_library.model.Playlist"
+name¥
+¢
+s  s(,
+%1boolean"	__compare*"
+
+__unknown_file (
+!=*4
+
+__unknown_file (
+
+%0java.lang.String*"
+
+__unknown_file (
+""*
+2
+3*!
+1s s(C"
+t t(
+""B-+
+)com.simplecity.amp_library.model.PlaylistHX

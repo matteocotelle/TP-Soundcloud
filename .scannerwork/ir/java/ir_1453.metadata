@@ -1,0 +1,4 @@
+com.afollestad.aesthetic.AestheticToolbar#invalidateColors(LBgIconColorState;)V
+com.afollestad.aesthetic.Util#setOverflowButtonColor(LToolbar;I)V
+==
+setNavigationIcon com.afollestad.aesthetic.AestheticToolbar#setNavigationIcon(LDrawable;)V

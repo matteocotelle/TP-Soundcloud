@@ -1,0 +1,54 @@
+
+\com.simplecity.amp_library.http.HttpServer#getMimeType(Ljava/lang/String;)Ljava/lang/String;g
+[/Users/matteo/dev/Shuttle/app/src/main/java/com/simplecity/amp_library/http/HttpServer.javaÑ Ñ("1*ö
+1
+Ò Ò(†
+ƒ
+
+Ò Ò(
+%0java.util.Map"__id*Z
+
+__unknown_file (>*<,
+*com.simplecity.amp_library.http.HttpServer"
+
+MIME_TYPESÍÊ
+
+Ò1 Ò(J	
+%1int"1java.lang.String#lastIndexOf(Ljava/lang/String;)I*:
+
+__unknown_file (
+
+filePathjava.lang.String*!
+
+__unknown_file (
+.2lastIndexOf(Ljava/lang/String;)ÆÃ
+
+Ò Ò(O
+%2java.lang.String"/java.lang.String#substring(I)Ljava/lang/String;*:
+
+__unknown_file (
+
+filePathjava.lang.String*"
+
+__unknown_file (
+""2substring(I)š
+—
+
+Ò Ò(P
+%3java.lang.String"__mapGet*1
+
+__unknown_file (
+
+%0java.util.Map*4
+
+__unknown_file (
+
+%2java.lang.String"&
+
+Ò Ò(Q
+
+%3java.lang.String:*
+
+Ñ Ñ(&
+filePathjava.lang.StringB.,
+*com.simplecity.amp_library.http.HttpServer

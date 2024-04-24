@@ -94,7 +94,6 @@ public class Equalizer {
          */
         private Virtualizer virtualizer;
 
-        //        private final PresetReverb mPresetReverb;
 
         private short mEqNumPresets = -1;
         private short mEqNumBands = -1;
@@ -102,8 +101,7 @@ public class Equalizer {
         EffectSet(int sessionId) {
             equalizer = new android.media.audiofx.Equalizer(1, sessionId);
             bassBoost = new BassBoost(1, sessionId);
-            virtualizer = new Virtualizer(1, sessionId);
-            //            mPresetReverb = new PresetReverb(0, sessionId);
+            virtualizer = new Virtualizer(1, sessionId);    
         }
 
         /*
@@ -181,26 +179,10 @@ public class Equalizer {
             }
         }
 
-        //        public void enableReverb(boolean enable) {
-        //            if (enable != mPresetReverb.getEnabled()) {
-        //                if (!enable) {
-        //                    mPresetReverb.setPreset((short) 0);
-        //                }
-        //                mPresetReverb.setEnabled(enable);
-        //            }
-        //        }
-
-        //        public void setReverbPreset(short preset) {
-        //            if (mPresetReverb.getEnabled() && mPresetReverb.getPreset() != preset) {
-        //                mPresetReverb.setPreset(preset);
-        //            }
-        //        }
-
         public void release() {
             equalizer.release();
             bassBoost.release();
             virtualizer.release();
-            //            mPresetReverb.release();
         }
     }
 
@@ -334,7 +316,7 @@ public class Equalizer {
         try {
             session.enableEqualizer(globalEnabled);
             final int customPresetPos = session.getNumEqualizerPresets();
-            final int preset = Integer.valueOf(mPrefs.getString("audiofx.eq.preset", String.valueOf(customPresetPos)));
+            final int preset = Integer.parseInt(mPrefs.getString("audiofx.eq.preset", String.valueOf(customPresetPos)));
             final int bands = session.getNumEqualizerBands();
 
             /*

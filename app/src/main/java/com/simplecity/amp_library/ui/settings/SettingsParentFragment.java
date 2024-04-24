@@ -50,8 +50,8 @@ public class SettingsParentFragment extends BaseNavigationController implements
         DrawerLockManager.DrawerLock,
         MiniPlayerLockManager.MiniPlayerLock {
 
-    public static String ARG_PREFERENCE_RESOURCE = "preference_resource";
-    public static String ARG_TITLE = "title";
+    public static final String ARG_PREFERENCE_RESOURCE = "preference_resource";
+    public static final String ARG_TITLE = "title";
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -74,6 +74,7 @@ public class SettingsParentFragment extends BaseNavigationController implements
     }
 
     public SettingsParentFragment() {
+        //azerazer
     }
 
     @Override
@@ -166,6 +167,7 @@ public class SettingsParentFragment extends BaseNavigationController implements
         }
 
         public SettingsFragment() {
+            //azerazer
         }
 
         @Override
@@ -475,7 +477,7 @@ public class SettingsParentFragment extends BaseNavigationController implements
 
         @Override
         public void onColorChooserDismissed(@NonNull ColorChooserDialog dialog) {
-
+            //azerazer
         }
 
         // Support View

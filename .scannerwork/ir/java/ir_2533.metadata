@@ -1,0 +1,3 @@
+com.simplecity.amp_library.http.lastfm.LastFmAlbum#getImageUrl()Ljava/lang/String;
+==
+getImages com.simplecity.amp_library.http.lastfm.LastFmAlbum$Album#getImages()Ljava/util/List;

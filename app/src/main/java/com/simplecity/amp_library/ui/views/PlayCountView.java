@@ -16,22 +16,20 @@ public class PlayCountView extends AppCompatTextView {
 
     private Disposable disposable;
 
-    private Drawable backgroundDrawable;
-
     public PlayCountView(Context context) {
         super(context);
-
         init();
     }
 
     public PlayCountView(Context context, AttributeSet attrs) {
         super(context, attrs);
-
         init();
     }
 
     private void init() {
-        backgroundDrawable = DrawableCompat.wrap(ContextCompat.getDrawable(getContext(), R.drawable.bg_rounded));
+        // Initialization of the background in the method where it is used.
+        Drawable backgroundDrawable = DrawableCompat.wrap(ContextCompat.getDrawable(getContext(), R.drawable.bg_rounded));
+        setBackground(backgroundDrawable);
     }
 
     public void setCount(int count) {
@@ -41,6 +39,8 @@ public class PlayCountView extends AppCompatTextView {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
+        // Re-initialize the backgroundDrawable locally in this method
+        Drawable backgroundDrawable = DrawableCompat.wrap(ContextCompat.getDrawable(getContext(), R.drawable.bg_rounded));
 
         disposable = Aesthetic.get(getContext())
                 .colorPrimary()
@@ -57,9 +57,9 @@ public class PlayCountView extends AppCompatTextView {
 
     @Override
     protected void onDetachedFromWindow() {
-
-        disposable.dispose();
-
+        if (disposable != null && !disposable.isDisposed()) {
+            disposable.dispose();
+        }
         super.onDetachedFromWindow();
     }
 }

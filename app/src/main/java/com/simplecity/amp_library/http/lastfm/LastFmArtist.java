@@ -11,10 +11,18 @@ public class LastFmArtist implements LastFmResult {
     public Artist artist;
 
     public static class Artist {
-        public String name;
+        private String name;  // Rendu non-public et ajout des accesseurs
         @SerializedName("image")
         public List<LastFmImage> images = new ArrayList<>();
         public Bio bio;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 
     @Override

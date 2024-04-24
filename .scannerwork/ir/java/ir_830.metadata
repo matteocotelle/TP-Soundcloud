@@ -1,0 +1,3 @@
+com.simplecity.amp_library.playback.MediaManager#removeSongsFromQueue(Ljava/util/List;)V
+==
+getService com.simplecity.amp_library.playback.LocalBinder#getService()LMusicService;

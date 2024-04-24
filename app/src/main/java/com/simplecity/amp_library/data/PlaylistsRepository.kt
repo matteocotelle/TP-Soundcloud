@@ -48,7 +48,10 @@ class PlaylistsRepository @Inject constructor(
             val playlists = mutableListOf<Playlist>()
 
             // Todo: Hide Podcasts if there are no songs
-            playlists.add(getPodcastPlaylist())
+            if (hasSongs(getPodcastPlaylist())) {
+                playlists.add(getPodcastPlaylist());
+            }
+
             playlists.add(getRecentlyAddedPlaylist())
             playlists.add(getMostPlayedPlaylist())
 

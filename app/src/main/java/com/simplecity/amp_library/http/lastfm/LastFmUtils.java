@@ -5,7 +5,9 @@ import java.util.List;
 @SuppressWarnings("WeakerAccess")
 public class LastFmUtils {
 
-    private static final String TAG = "LastFmUtils";
+    private LastFmUtils() {
+        throw new UnsupportedOperationException("Utility class and cannot be instantiated");
+    }
 
     public static String getBestImageUrl(List<LastFmImage> images) {
         String[] sizes = new String[] {

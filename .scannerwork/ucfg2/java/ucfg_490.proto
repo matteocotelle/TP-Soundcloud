@@ -1,0 +1,103 @@
+
+ccom.simplecity.amp_library.playback.MediaManager#getAlbum()Lcom/simplecity/amp_library/model/Album;m
+a/Users/matteo/dev/Shuttle/app/src/main/java/com/simplecity/amp_library/playback/MediaManager.javaß ß("5*Ü
+2
+â â(´±
+
+â â( 
+%7"@com.simplecity.amp_library.playback.MediaManager#getSong()LSong;*P
+
+__unknown_file (42
+0com.simplecity.amp_library.playback.MediaManager2	getSong()"
+
+â â(,
+""*Ý
+3
+á á(´±
+
+á á(
+%5"@com.simplecity.amp_library.playback.MediaManager#getSong()LSong;*P
+
+__unknown_file (42
+0com.simplecity.amp_library.playback.MediaManager2	getSong()Œ
+‰
+
+á á(!
+%6"	__compare*"
+
+__unknown_file (
+!=*"
+
+__unknown_file (
+
+%5*"
+
+__unknown_file (
+""*
+2
+1*­
+4
+àA à(\½
+º
+
+àA à(j5
+%2/com.simplecity.amp_library.playback.LocalBinder"__id*o
+
+__unknown_file (S*Q>
+<com.simplecity.amp_library.utils.MusicServiceConnectionUtils"
+serviceBinderÄÁ
+
+àA à(w
+%3"Jcom.simplecity.amp_library.playback.LocalBinder#getService()LMusicService;*S
+
+__unknown_file (7
+5
+%2/com.simplecity.amp_library.playback.LocalBinder2getService()Œ
+‰
+
+àA à(
+%4"	__compare*"
+
+__unknown_file (
+!=*"
+
+__unknown_file (
+
+%3*"
+
+__unknown_file (
+""*
+3
+1* 
+5
+à à('½
+º
+
+à à(55
+%0/com.simplecity.amp_library.playback.LocalBinder"__id*o
+
+__unknown_file (S*Q>
+<com.simplecity.amp_library.utils.MusicServiceConnectionUtils"
+serviceBinderÆ
+Ã
+
+à à(=
+%1boolean"	__compare*"
+
+__unknown_file (
+!=*S
+
+__unknown_file (7
+5
+%0/com.simplecity.amp_library.playback.LocalBinder*"
+
+__unknown_file (
+""*
+4
+1*%
+1
+å å("
+
+å å(
+""B42
+0com.simplecity.amp_library.playback.MediaManagerH

@@ -1,0 +1,2 @@
+test.com.androidnavigation.fragment.BaseController#getNavigationController()LNavigationController;
+test.com.androidnavigation.fragment.BaseController#findNavigationController(LFragment;)LNavigationController;

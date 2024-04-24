@@ -1,0 +1,64 @@
+
+Fcom.simplecity.amp_library.model.Playlist#toString()Ljava/lang/String;d
+Z/Users/matteo/dev/Shuttle/app/src/main/java/com/simplecity/amp_library/model/Playlist.javax x("1*½
+1y y(^
+\
+y z(
+%0java.lang.String"__concat*
+y y(
+	Playlist{*
+z z(
+id=h
+f
+y z(
+%1java.lang.String"__concat*$
+y z(
+
+%0java.lang.String*
+z z(
+""n
+l
+y {(
+%2java.lang.String"__concat*$
+y z(
+
+%1java.lang.String*
+{ {(
+
+, name='
+}
+{ {(!
+%3java.lang.String"__id*S
+
+__unknown_file (7*5+
+)com.simplecity.amp_library.model.Playlist"
+namez
+x
+y {(!
+%4java.lang.String"__concat*$
+y {(
+
+%2java.lang.String*$
+{ {(!
+
+%3java.lang.Stringh
+f
+y {((
+%5java.lang.String"__concat*$
+y {(!
+
+%4java.lang.String*
+{$ {((
+\'g
+e
+y |(
+%6java.lang.String"__concat*$
+y {((
+
+%5java.lang.String*
+| |(
+}"$
+y |(
+
+%6java.lang.StringB-+
+)com.simplecity.amp_library.model.PlaylistH

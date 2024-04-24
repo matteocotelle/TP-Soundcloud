@@ -1,0 +1,4 @@
+com.simplecity.amp_library.playback.MediaManager#getAlbumArtist()LAlbumArtist;
+==
+getService com.simplecity.amp_library.playback.LocalBinder#getService()LMusicService;
+getSong com.simplecity.amp_library.playback.MediaManager#getSong()LSong;

@@ -29,13 +29,13 @@ internal class MediaPlayerPlayback(context: Context) : LocalPlayback(context), M
     private var fadeAnimator: ValueAnimator? = null
 
     override val isPlaying: Boolean
-        get() = synchronized(this) {
-            if (!isInitialized || isFadingDown) {
-                return false
-            } else {
-                return currentMediaPlayer?.isPlaying ?: false || isFadingUp
-            }
+    get() = synchronized(this) {
+        return if (!isInitialized || isFadingDown) {
+            false
+        } else {
+            currentMediaPlayer?.isPlaying ?: false || isFadingUp
         }
+    }
 
     override val duration: Long
         get() = synchronized(this) {
@@ -276,8 +276,6 @@ internal class MediaPlayerPlayback(context: Context) : LocalPlayback(context), M
                 callbacks?.onError(this, "Server died")
                 return true
             }
-            else -> {
-            }
         }
 
         callbacks?.onError(this, "Unknown error")
@@ -296,7 +294,7 @@ internal class MediaPlayerPlayback(context: Context) : LocalPlayback(context), M
     }
 
     override fun updateLastKnownStreamPosition() {
-
+        //azerazer
     }
 
     private fun createMediaPlayer(context: Context): MediaPlayer {

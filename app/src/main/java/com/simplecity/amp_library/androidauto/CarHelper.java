@@ -21,7 +21,10 @@ import android.content.res.Configuration;
 
 public class CarHelper {
 
-    private static final String TAG = "CarHelper";
+    // Private constructor to hide the implicit public one
+    private CarHelper() {
+        // Private constructor to prevent instantiation
+    }
 
     public static boolean isCarUiMode(Context c) {
         UiModeManager uiModeManager = (UiModeManager) c.getSystemService(Context.UI_MODE_SERVICE);

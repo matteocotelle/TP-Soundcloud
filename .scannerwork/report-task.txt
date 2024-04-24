@@ -1,0 +1,7 @@
+organization=epsi-code-analysis
+projectKey=epsi-code-analysis_tp-sonarcloud-v2
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.53978
+dashboardUrl=https://sonarcloud.io/dashboard?id=epsi-code-analysis_tp-sonarcloud-v2
+ceTaskId=AY8Q6MrL75sAt1eYu_s0
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY8Q6MrL75sAt1eYu_s0

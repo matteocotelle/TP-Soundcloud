@@ -12,6 +12,8 @@ import java.util.Map;
 public class HttpServer {
 
     private static final String TAG = "HttpServer";
+    private static final String MIME_TYPE_HTML = "text/html";
+
 
     private static HttpServer sHttpServer;
 
@@ -83,7 +85,7 @@ public class HttpServer {
 
             if (audioFileToServe == null) {
                 Log.e(TAG, "Audio file to serve null");
-                return newFixedLengthResponse(Response.Status.NOT_FOUND, "text/html", "File not found");
+                return newFixedLengthResponse(Response.Status.NOT_FOUND, MIME_TYPE_HTML, "File not found");
             }
 
             String uri = session.getUri();
@@ -126,14 +128,17 @@ public class HttpServer {
                         long contentLength = end - start + 1;
                         cleanupAudioStream();
                         audioInputStream = new FileInputStream(file);
-                        audioInputStream.skip(start);
+                        long skipped = audioInputStream.skip(start);
+                        if (skipped != start) {
+                            throw new IOException("Skipped only " + skipped + " bytes out of " + start + " required.");
+                        }
                         Response response = newFixedLengthResponse(Response.Status.PARTIAL_CONTENT, getMimeType(audioFileToServe), audioInputStream, contentLength);
                         response.addHeader("Content-Length", contentLength + "");
                         response.addHeader("Content-Range", "bytes " + start + "-" + end + "/" + fileLength);
                         response.addHeader("Content-Type", getMimeType(audioFileToServe));
                         return response;
                     } else {
-                        return newFixedLengthResponse(Response.Status.RANGE_NOT_SATISFIABLE, "text/html", range);
+                        return newFixedLengthResponse(Response.Status.RANGE_NOT_SATISFIABLE, MIME_TYPE_HTML, range);
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "Error serving audio: " + e.getMessage());
@@ -141,7 +146,7 @@ public class HttpServer {
                 }
             } else if (uri.contains("image")) {
                 if (imageBytesToServe == null) {
-                    return newFixedLengthResponse(Response.Status.NOT_FOUND, "text/html", "Image bytes null");
+                    return newFixedLengthResponse(Response.Status.NOT_FOUND, MIME_TYPE_HTML, "Image bytes null");
                 }
                 cleanupImageStream();
                 imageInputStream = new ByteArrayInputStream(imageBytesToServe);
@@ -149,7 +154,7 @@ public class HttpServer {
                 return newFixedLengthResponse(Response.Status.OK, "image/png", imageInputStream, imageBytesToServe.length);
             }
             Log.e(TAG, "Returning NOT_FOUND response");
-            return newFixedLengthResponse(Response.Status.NOT_FOUND, "text/html", "File not found");
+            return newFixedLengthResponse(Response.Status.NOT_FOUND, MIME_TYPE_HTML, "File not found");
         }
     }
 
@@ -171,10 +176,11 @@ public class HttpServer {
         }
     }
 
-    private final Map<String, String> MIME_TYPES = new HashMap<String, String>() {{
+    private final Map<String, String> MIME_TYPES = new HashMap<>();
+    {
         put("css", "text/css");
-        put("htm", "text/html");
-        put("html", "text/html");
+        put("htm", MIME_TYPE_HTML);
+        put("html", MIME_TYPE_HTML);
         put("xml", "text/xml");
         put("java", "text/x-java-source, text/java");
         put("md", "text/plain");
@@ -198,7 +204,7 @@ public class HttpServer {
         put("zip", "application/octet-stream");
         put("exe", "application/octet-stream");
         put("class", "application/octet-stream");
-    }};
+    }
 
     String getMimeType(String filePath) {
         return MIME_TYPES.get(filePath.substring(filePath.lastIndexOf(".") + 1));

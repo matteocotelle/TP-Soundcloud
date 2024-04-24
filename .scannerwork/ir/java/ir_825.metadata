@@ -1,0 +1,4 @@
+com.simplecity.amp_library.playback.MediaManager#getQueue()Ljava/util/List;
+java.util.ArrayList#<init>()V
+==
+getService com.simplecity.amp_library.playback.LocalBinder#getService()LMusicService;

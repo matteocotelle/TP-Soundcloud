@@ -147,7 +147,6 @@ class SearchFragment :
 
         val searchItem = toolbar!!.menu.findItem(R.id.search)
         searchItem.expandActionView()
-        searchView = searchItem.actionView as SearchView
 
         searchItem.setOnActionExpandListener(object : MenuItem.OnActionExpandListener {
             override fun onMenuItemActionExpand(item: MenuItem): Boolean {

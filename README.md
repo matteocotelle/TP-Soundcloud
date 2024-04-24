@@ -1,3 +1,10 @@
+sonar-scanner \
+  -Dsonar.organization=epsi-code-analysis \
+  -Dsonar.projectKey=epsi-code-analysis_tp-sonarcloud-v2 \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.java.binaries=.
+
 ### Shuttle Music Player
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE.md)

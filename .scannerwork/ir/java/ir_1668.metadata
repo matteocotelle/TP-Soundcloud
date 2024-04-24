@@ -1,0 +1,2 @@
+com.simplecity.amp_library.model.Song#getGenre(LContext;)LSingle;
+com.simplecity.amp_library.model.Genre#getQuery()LQuery;
